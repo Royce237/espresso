@@ -5,6 +5,10 @@
 env:
   name: ProductCatalogUrl
   value: http://product:8091
+  namer: ReviewsUrl
+  valuer: http://review:8092
+  namep: DATABASE_URL
+  valuep: "tcp-redis://redis:redis@redis-master:6379"
 
 replicaCount: 1
 

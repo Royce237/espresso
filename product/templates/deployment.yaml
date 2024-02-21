@@ -40,6 +40,9 @@ spec:
             - name: http
               containerPort: {{ .Values.service.targetport }}
               protocol: TCP
+          env:
+            - name: {{ .Values.env.name }}
+              value: {{ .Values.env.value }}
           # livenessProbe:
           #   httpGet:
           #     path: /

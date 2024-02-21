@@ -18,6 +18,7 @@ env:
   name: SERVICE_VERSION
   value1: v1
   value2: v2
+  value3: postgresql://postgres:test123@postgres-postgresql-ha-postgresql:5432/postgres
 
 serviceAccount:
   # Specifies whether a service account should be created

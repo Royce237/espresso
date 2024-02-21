@@ -43,6 +43,10 @@ spec:
           env:
             - name: {{ .Values.env.name }}
               value: {{ .Values.env.value }}
+            - name: {{ .Values.env.namer }}
+              value: {{ .Values.env.valuer }}
+            - name: {{ .Values.env.namep }}
+              value: {{ .Values.env.valuep }}
           # livenessProbe:
           #   httpGet:
           #     path: /

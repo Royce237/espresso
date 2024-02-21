@@ -43,8 +43,8 @@ spec:
           env:
             - name: {{ .Values.env.name }}
               value: {{ .Values.env.value2 }}
-            
-          # livenessProbe:
+            - name: DATABASE_URL
+              value: {{ .Values.env.value3}}
           #   httpGet:
           #     path: /
           #     port: http
